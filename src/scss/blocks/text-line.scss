@@ -1,0 +1,14 @@
+.text-line {
+	position: relative;
+	width: 100%;
+	margin-bottom: 16.7vw;
+	z-index: 3;
+
+	@media (min-width: 1921px) {
+		margin-bottom: 322px;
+	}
+	
+	@media (max-width: 768px) {
+		margin-bottom: 17.06vw;
+	}
+}

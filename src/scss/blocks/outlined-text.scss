@@ -1,0 +1,13 @@
+.outlined-text {
+	-webkit-text-fill-color: var(--color-black);
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+
+	@media (max-width: 1440px) {
+		-webkit-text-stroke-width: 2px;
+	}
+	
+	@media (max-width: 768px) {
+		-webkit-text-stroke-width: 1px;
+	}
+}

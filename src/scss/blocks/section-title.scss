@@ -1,0 +1,12 @@
+.section-title {
+	font-size: 3vw;
+	line-height: 1.2;	
+
+	@media (min-width: 1921px) {
+		font-size: 72px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 8.53vw;
+	}
+}

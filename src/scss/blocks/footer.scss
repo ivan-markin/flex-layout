@@ -1,0 +1,137 @@
+.footer {
+	background-color: #0B0C0D;
+	position: relative;
+	padding: 66px 0 50px;
+
+	@media (max-width: 768px) {
+		padding: 8.53vw 0 50px;
+	}
+	
+	&__logo {
+		flex: none;
+		margin-right: 40px;
+
+		@media (max-width: 768px) {
+			margin: 0 0 10.67vw;
+		}
+	}
+	
+	&__menu-block {
+		display: flex;
+		flex: auto;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 70px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__menu {
+		display: flex;
+
+		@media (max-width: 768px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 50px;
+		}
+
+		&-item {
+			list-style: none;
+			font-weight: 300;
+
+			&:not(:last-of-type) {
+				margin-bottom: 24px;
+			}
+
+			a {
+				color: white;
+				text-decoration: none;
+				transition: all .2s;
+
+				&:hover {
+					color: var(--color-hover);
+				}
+			}
+		}
+	}
+
+	&__menu-column {
+		
+		&:not(:last-of-type) {
+			margin-right: 7.3vw;
+
+			@media (min-width: 1921px) {
+				margin-right: 140px;
+			}
+		}
+
+		&-title {
+			font-size: 18px;
+			border-bottom: rgba($color: white, $alpha: .1) 1px solid;
+			padding: 0 0 16px;
+			margin: 0 0 32px;
+
+			@media (max-width: 768px) {
+				border: none;
+				padding: 0;
+			}
+		}
+
+		&-links {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&__copyright {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 500;
+
+		@media (max-width: 768px) {
+			flex-direction: column-reverse;
+			font-size: 14px;
+		}
+
+		&-text {
+			opacity: .6;
+		}
+
+		&-menu {
+			display: flex;
+			
+			@media (max-width: 768px) {
+				width: 100%;
+				justify-content: space-between;
+				padding: 0;
+			}
+		}
+
+		&-link {
+			list-style: none;			
+
+			&:not(:last-of-type) {
+				margin-right: 42px;
+
+				@media (max-width: 768px) {
+					margin: 0;
+				}
+			}
+
+			a {
+				color: white;
+				text-decoration: none;
+				transition: all .2s;
+
+				&:hover {
+					color: var(--color-hover);
+				}
+			}
+		}
+	}
+}

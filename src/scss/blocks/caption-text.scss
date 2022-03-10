@@ -1,0 +1,12 @@
+.caption-text {
+	font-size: 1.25vw;
+	line-height: 1.6;
+
+	@media (min-width: 1921px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 4.8vw;
+	}
+}

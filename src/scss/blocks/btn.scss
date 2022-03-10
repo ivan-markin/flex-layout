@@ -1,0 +1,26 @@
+.btn {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, #0073C4 0%, rgba(169, 0, 196, 0) 88.93%), rgba(15, 16, 17, 0.4);
+	backdrop-filter: blur(4px);
+	border-radius: 4px;
+	border: #3A235D 1px solid;
+	font-size: 20px;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	height: 70px;
+	width: fit-content;
+	white-space: nowrap;
+	transition: all .3s;
+	cursor: pointer;
+	padding: 0 32px;
+
+	&:hover {
+		background: linear-gradient(90deg, #0073C4 0%, rgba(169, 0, 196, 0) 88.93%), rgba(37, 5, 44, .7);		
+		// background: linear-gradient(90deg, #0073C4 0%, #0073C4 88.93%), #0073C4;		
+		// border: var(--color-hover) 1px solid;
+	}
+}
