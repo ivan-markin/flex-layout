@@ -9,11 +9,14 @@ import Swiper from 'swiper';
 import SwiperCore, { Navigation } from 'swiper/core';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const roadmapSlides = Array.from(document.querySelectorAll('.roadmap__slide'));
+    
     SwiperCore.use([Navigation]);
     
     const featuresSwiper = new Swiper('.features-slider', {                                       
         slidesPerView: 'auto',
         centeredSlides: true,
+        speed: 500,
         spaceBetween: 20,        
         navigation: {
             nextEl: '.features-slider__next',
@@ -27,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const roadmapSwiper = new Swiper('.roadmap__slider', {                                       
-        slidesPerView: 'auto',                
+        slidesPerView: 'auto',            
         spaceBetween: 12,
         slidesOffsetBefore: 12,
         slidesOffsetAfter: 12,
@@ -49,5 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesOffsetBefore: 40
             }
         }
-    })
+    })          
 })
