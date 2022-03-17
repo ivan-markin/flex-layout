@@ -13,25 +13,29 @@
 </head>
 
 <body>
-  <!-- <div class="mobile-menu-block">
-    <a href="">
-      <img src="./images/flex-logo_white.svg" alt="">
+  <div class="mobile-menu-block">
+    <button class="mobile-menu-block__close"></button>
+    <a href="/">
+      <img class="mobile-menu-block__logo" src="./images/flex-logo_white.svg" alt="">
     </a>
-    <ul class="mobile-menu">
+    <ul class="mobile-menu-block__menu">
       <li>
-        <a href="">Token</a>
+        <a href="">FLX Token</a>
       </li>
       <li>
         <a href="">Community</a>
       </li>
       <li>
-        <a href="">Docs</a>
-      </li>
-      <li>
-        <a href="">About</a>
-      </li>
+        <a href="https://tonlabs.gitbook.io/flex/" target="blank">Flex Docs</a>
+      </li>      
     </ul>
-  </div> -->
+    <div class="locales-select">
+      <button class="locales-select__button">
+        <img src="./images/flag-usa.svg" alt="">
+        <span>EN</span>
+      </button>
+    </div>
+  </div>
   
   <div class="container">
     <section class="hero">                  
@@ -92,7 +96,7 @@
           </picture>
 
           <div class="hero__cta-block">
-            <a class="hero__cta-button btn" href="">Launch Exchange</a>
+            <a class="hero__cta-button btn" href="">Download Flex</a>
             <span class="hero__cta-text">
               FLEX is in test mode until April 2022.
               <a href="mailto:info@flexdex.fi">Contact</a> us for early access
@@ -151,7 +155,7 @@
             transactions per second thanks to its underlying blockchain technology Everscale, which set the world record with 54K
             TPS in a real world decentralized environment.
           </p>
-          <a class="section-3__button btn" href="">Launch Exchange</a>          
+          <a class="section-3__button btn" href="">Download Flex</a>          
         </div>
       </div>      
     </section>
@@ -172,10 +176,8 @@
           <div class="features-slider__item-left">
             <div class="features-slider__item-text">
               <h3 class="features-slider__item-title">Killer feature 1</h3>
-              <p class="features-slider__item-description">
-                Built on <b>EVER OS</b> the only blockchain based platform on the planet for decentralized internet that infinitely
-                scales
-                without compromising security
+              <p class="features-slider__item-description section-title">
+                Lightening fast limit orderbook
               </p>
             </div>
             <div class="features-slider__navigation-arrows">
@@ -191,11 +193,9 @@
         <div class="features-slider__item swiper-slide">
           <div class="features-slider__item-left">
             <div class="features-slider__item-text">
-              <h3 class="features-slider__item-title">Killer feature 1</h3>
-              <p class="features-slider__item-description">
-                Built on <b>EVER OS</b> the only blockchain based platform on the planet for decentralized internet that infinitely
-                scales
-                without compromising security
+              <h3 class="features-slider__item-title">Killer feature 2</h3>
+              <p class="features-slider__item-description section-title">
+                On par or faster than any CEX
               </p>
             </div>
             <div class="features-slider__navigation-arrows">
@@ -211,11 +211,45 @@
         <div class="features-slider__item swiper-slide">
           <div class="features-slider__item-left">
             <div class="features-slider__item-text">
-              <h3 class="features-slider__item-title">Killer feature 1</h3>
-              <p class="features-slider__item-description">
-                Built on <b>EVER OS</b> the only blockchain based platform on the planet for decentralized internet that infinitely
-                scales
-                without compromising security
+              <h3 class="features-slider__item-title">Killer feature 3</h3>
+              <p class="features-slider__item-description section-title">
+                Secure as fortress due to DeBots
+              </p>
+            </div>
+            <div class="features-slider__navigation-arrows">
+              <button class="features-slider__prev swiper-button-prev"></button>
+              <button class="features-slider__next swiper-button-next"></button>
+            </div>
+          </div>
+          <picture>
+            <source srcset="./images/features-slider-image.png 1x, ./images/features-slider-image@2x.png 2x">
+            <img class="features-slider__item-image" src="./images/features-slider-image.png" alt="">
+          </picture>
+        </div>
+        <div class="features-slider__item swiper-slide">
+          <div class="features-slider__item-left">
+            <div class="features-slider__item-text">
+              <h3 class="features-slider__item-title">Killer feature 4</h3>
+              <p class="features-slider__item-description section-title">
+                All code is formally verified
+              </p>
+            </div>
+            <div class="features-slider__navigation-arrows">
+              <button class="features-slider__prev swiper-button-prev"></button>
+              <button class="features-slider__next swiper-button-next"></button>
+            </div>
+          </div>
+          <picture>
+            <source srcset="./images/features-slider-image.png 1x, ./images/features-slider-image@2x.png 2x">
+            <img class="features-slider__item-image" src="./images/features-slider-image.png" alt="">
+          </picture>
+        </div>
+        <div class="features-slider__item swiper-slide">
+          <div class="features-slider__item-left">
+            <div class="features-slider__item-text">
+              <h3 class="features-slider__item-title">Killer feature 5</h3>
+              <p class="features-slider__item-description section-title">
+                FLX intrinsic value forever(или EVER) growing
               </p>
             </div>
             <div class="features-slider__navigation-arrows">
@@ -260,7 +294,7 @@
               </p>
             </div>
             <a class="diagram-section__button btn" href="">
-              Launch Exchange
+              Download Flex
             </a>
           </div>
           <picture>
@@ -383,31 +417,31 @@
           <h2 class="community__title section-title">Jump in to our community</h2>
           <div class="community__content">
             <div class="community__network">
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://twitter.com/flexofficial_?s=20&t=xCXGd1c0QbTLldXCNvjr0w">
                 <img src="./images/social-icons/twitter.svg" alt="">
                 <span>Twitter</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://discord.gg/pXhgw8up">
                 <img src="./images/social-icons/discord.svg" alt="">
                 <span>Discord</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://t.me/+4qdQKVTjb0tlYWZk">
                 <img src="./images/social-icons/telegram.svg" alt="">
                 <span>Telegram</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://www.youtube.com/channel/UCEzgq9O5urNM8MjCLy3HN2Q">
                 <img src="./images/social-icons/youtube.svg" alt="">
                 <span>Youtube</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://github.com/FLEXTool/FLEX">
                 <img src="./images/social-icons/github.svg" alt="">
                 <span>Github</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="flashexchange.medium.com">
                 <img src="./images/social-icons/medium.svg" alt="">
                 <span>Medium</span>
               </a>
-              <a class="community__network-link" href="">
+              <a class="community__network-link" href="https://www.linkedin.com/company/flash-exchange/">
                 <img src="./images/social-icons/linkedin.svg" alt="">
                 <span>Linkedin</span>
               </a>

@@ -10,6 +10,9 @@ import SwiperCore, { Navigation } from 'swiper/core';
 
 document.addEventListener('DOMContentLoaded', () => {
     const roadmapSlides = Array.from(document.querySelectorAll('.roadmap__slide'));
+    const menuButton = document.querySelector('.header__menu-button');
+    const menuPopup = document.querySelector('.mobile-menu-block');
+    const menuCloseButton = document.querySelector('.mobile-menu-block__close');
     
     SwiperCore.use([Navigation]);
     
@@ -52,5 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesOffsetBefore: 40
             }
         }
-    })          
+    }) 
+    
+    function menuHandler() {
+        menuPopup?.classList.toggle('active');
+    }
+
+    menuButton?.addEventListener('click', menuHandler);
+    menuCloseButton?.addEventListener('click', menuHandler);
 })
